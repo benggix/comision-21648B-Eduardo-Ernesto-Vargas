@@ -1,0 +1,14 @@
+<h2>Editar Post</h2>
+<form action="/edit/<%= post.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" value="<%= post.title %>" required>
+    <br>
+    <label for="content">Contenido:</label>
+    <textarea id="content" name="content" required><%= post.content %></textarea>
+    <br>
+    <label for="imageUrl">URL de la Imagen:</label>
+    <input type="text" id="imageUrl" name="imageUrl" value="<%= post.imageUrl %>">
+    <br>
+    <button type="submit">Guardar Cambios</button>
+</form>

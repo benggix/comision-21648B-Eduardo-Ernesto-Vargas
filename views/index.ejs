@@ -1,0 +1,16 @@
+    <h2>Bienvenido a Posts</h2>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li>
+                <h3><%= post.title %></h3>
+                <p><%= post.content %></p>
+                <img src="<%= post.imageUrl %>" alt="Imagen relacionada">
+                <p>Fecha de creación: <%= post.createdAt.toDateString() %></p>
+                <a href="/edit/<%= post.id %>">Editar</a>
+                <form action="/delete/<%= post.id %>" method="POST">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/add">Agregar un Post</a>
