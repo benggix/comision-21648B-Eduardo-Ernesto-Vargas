@@ -17,8 +17,9 @@
 Proporciona instrucciones sobre cómo instalar y configurar el proyecto. Esto puede incluir la instalación de dependencias, la configuración de variables de entorno y otros pasos necesarios. Por ejemplo:
 
 1. Clona este repositorio: `git clone https://github.com/tuusuario/tuproyecto.git`
-2. Navega a la carpeta del proyecto: `cd MiProyecto`
-3. Instala las dependencias (node_modules): `npm install`
+2. Navega a la carpeta del proyecto
+3. Inicien el comando: npm init -y (para iniciarlizar el proyecto en node)
+3. Instala todas las dependencias: npm install 
 4. vaya a la carpeta config/database.js y configure el servidor de la base de datos 
 5. Abra XAMPP y inicie el servidor MySql (Start)
 6. De un click en admin y cree un nuevo repositorio con el nombre en el que uso en database como mencionamos anteriormente
